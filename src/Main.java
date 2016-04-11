@@ -1,6 +1,6 @@
 
 public class Main {
-	public static void main(){
+	public static void main(String[] args){
 		TreeNode root = new TreeNode(10);
 	    root.left = new TreeNode(2);
 	    root.right = new TreeNode(10);
@@ -10,6 +10,9 @@ public class Main {
 	    root.right.right.left = new TreeNode(3);
 	    root.right.right.right = new TreeNode(4);
 	    System.out.println("Hello World");
+	    MaxPathSum.findMaxPath(root);
+	    int res = MaxPathSum.res;
+	    System.out.println(res);
 	}
     
 }
